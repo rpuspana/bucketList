@@ -9,11 +9,13 @@
 </div>
 <div class="container color-light">
     <div class="col">
-      <p class="small">Use this form to add a new bucketlist goal.</p>
+      <p class="small">Use this form to add a new bucketlist goal.
+        <br>
+      Click on a goal on the right to remove it from the list</p>
       <form>
         <input type="text" class="text" name="item"  
         placeholder="Life goal..." [(ngModel)]="goalText">
-        <br><span>{{ goalText }}</span>
+        <!-- <br><span>{{ goalText }}</span> -->
         <input type="submit" class="btn" [value]="btnText" (click)="addItem()">
       </form> 
     </div>
