@@ -29,7 +29,7 @@ export class AboutComponent implements OnInit {
     this._data.goal.subscribe(response => this.goals = response);
   }
 
-  semdMeHome() {
+  sendMeHome() {
     // path set up in app.routing.module.ts
     this.router.navigate(['']);
   }
